@@ -1,2 +1,2 @@
-VERSION=v0.0.3
+VERSION=0.1.0
 DESCRIPTION="Package Inlets"

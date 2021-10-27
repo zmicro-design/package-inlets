@@ -18,7 +18,7 @@ core() {
 
   load_nvm
 
-  pm_npm remove -g @cliz/inlets
+  pm::npm remove -g @cliz/inlets
 }
 
 run() {

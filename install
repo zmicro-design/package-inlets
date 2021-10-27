@@ -18,7 +18,7 @@ core() {
 
   load_nvm
 
-  pm_npm i -g @cliz/inlets
+  pm::npm i -g @cliz/inlets
 }
 
 run() {
