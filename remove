@@ -12,11 +12,9 @@ core() {
     exit 0
   fi
   
-  if [ "$(is_nodejs_installed)" = "false" ]; then
+  if [ "$(os::is_nodejs_installed)" = "false" ]; then
     zpackage install nodejs
   fi
-
-  load_nvm
 
   pm::npm remove -g @cliz/inlets
 }
