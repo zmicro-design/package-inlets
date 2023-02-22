@@ -15,13 +15,13 @@ core() {
   #   exit 0
   # fi
 
+  # ZMICRO_NVM
+  [ -s "$ZMICRO_HOME/plugins/nvm/source" ] && \. $ZMICRO_HOME/plugins/nvm/source
+
   which inlets >>/dev/null 2>&1
   if [ "$?" != "0" ]; then
     zmicro package install inlets
   fi
-
-  # ZMICRO_NVM
-[ -s "$ZMICRO_HOME/plugins/nvm/source" ] && \. $ZMICRO_HOME/plugins/nvm/source
 
   inlets $@
 }
