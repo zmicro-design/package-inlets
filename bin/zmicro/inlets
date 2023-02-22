@@ -20,6 +20,9 @@ core() {
     zmicro package install inlets
   fi
 
+  # ZMICRO_NVM
+[ -s "$ZMICRO_HOME/plugins/nvm/source" ] && \. $ZMICRO_HOME/plugins/nvm/source
+
   inlets $@
 }
 
